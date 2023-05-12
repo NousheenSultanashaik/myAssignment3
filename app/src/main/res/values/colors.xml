@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#6388DF</color>
+    <color name="loginbg">#F2D1CBCB</color>
+    <color name="existinguser">#FFFFFF</color>
+    <color name="loginbtnbg">#FFFFFF</color>
+    <color name="shadoweffect">#E0E0E0</color>
+    <color name="myAppcolor">#404040</color>
+    <color name="galarycolor">#6388DF</color>
+    <color name="uploadcolor">#ADB5BD</color>
+    <color name="greyforlight">#C5C9CD</color>
+    <color name="galarycolortop">#252525</color>
+    <color name="main_bg_color">#6388DF</color>
+    <color name="clr_white">#FFFFFF</color>
+    <color name="clr_blue">#6388DF</color>
+    <color name="clr_black">#404040</color>
+    <color name="clr_cement">#C2C2C2</color>
+    <color name="clr_status_bg">#252525</color>
+</resources>

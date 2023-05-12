@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".SignUpActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar_signup_screen"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_create_account"
+        android:layout_width="217dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:gravity="center"
+        android:text="@string/String7"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_24dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_signup_screen"
+
+
+        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="645dp"
+        android:id="@+id/fl_login"
+        android:background="@drawable/fl_bg_up_corner"
+
+        android:layout_marginTop="110dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_create_account"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="30dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/userEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:hint="@string/String8"
+                android:inputType="text"
+                android:textColorHint="@color/black"
+                android:textColor="@color/greyforlight"
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="115dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="30dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greyforlight"
+                android:background="@color/white"
+                android:hint="@string/String9"
+                android:inputType="textEmailAddress"
+
+
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="180dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/black"
+                android:layout_marginStart="15dp"
+                tools:ignore="InefficientWeight">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/passET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/greyforlight"
+                    android:background="@color/white"
+                    android:hint="@string/String10"
+                    android:inputType="textPassword"
+
+                    tools:ignore="HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/ib_eye_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_remove_red_eye_24"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="235dp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Password must be alphanumeric and atleast six characters"
+            android:textSize="10dp"
+
+            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="255dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:textColorHint="@color/black"
+                >
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/confirmPassEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:hint="@string/String11"
+                    android:inputType="textPassword"
+                    android:textColor="@color/greyforlight"
+
+                    tools:ignore="HardcodedText,SpeakableTextPresentCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <ImageButton
+                android:id="@+id/reenterpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:background="@drawable/baseline_remove_red_eye_24"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:layout_marginStart="10dp"
+
+            >
+
+            <CheckBox
+                android:id="@+id/cb_signin"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="i agree to the "
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16dp"
+
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_semibold"
+                android:padding="2dp"
+                android:text="Terms of Services"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_size_16dp"
+
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/btn_bg_blue_color"
+            android:fontFamily="@font/open_sans_semibold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:text="signup"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            tools:ignore="HardcodedText" />
+
+
+    </FrameLayout>
+    <ImageView
+        android:id="@+id/Backsignup"
+        android:layout_width="15.48dp"
+        android:layout_height="15.8dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/backarrowforgallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/existinguser"
+        tools:ignore="ContentDescription,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

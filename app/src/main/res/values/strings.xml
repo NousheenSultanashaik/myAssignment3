@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Assignment3</string>
+    <string name="String1">Welcome</string>
+    <string name="String2">Existing user</string>
+    <string name="String3">Login</string>
+    <string name="String4">New User</string>
+    <string name="String5">Sign Up</string>
+    <string name="String6">Welcome Back</string>
+    <string name="String7">Create Account</string>
+    <string name="String8">Username</string>
+    <string name="String9">Email</string>
+    <string name="String10">Password</string>
+    <string name="String11">Re-enter password</string>
+    <string name="String12">View Gallery</string>
+    <string name="String13">View latest location</string>
+    <string name="String14">Upload Image</string>
+    //i have taken this from google cloud
+    <string name="google_maps_api_key">AIzaSyBLEUzcsHo7BdXXnZQIzKI4fAjkxcHQVXk</string>
+    <string name="map">Map</string>
+    <string name="address">Address</string>
+    <string name="place_address">Hitech City Rd, Patrika Nagar, HITEC City, Hyderabad, Telangana 500081</string>
+    <string name="date_and_time">Date and time</string>
+    <string name="update_location">Update location</string>
+    <string name="please_wait">please_wait</string>
+    <string name="getting_location">getting_location</string>
+    <string name="String15">Update Location</string>
+
+</resources>
